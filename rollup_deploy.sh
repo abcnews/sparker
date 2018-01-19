@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
+trash build
 rollup -c
-#trash build
 #cp -r rollup build
 aunty deploy
