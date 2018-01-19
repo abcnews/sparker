@@ -5,6 +5,7 @@ import commonjs from "rollup-plugin-commonjs";
 import uglify from "rollup-plugin-uglify";
 import babel from "rollup-plugin-babel";
 import copy from 'rollup-plugin-copy';
+import cleaner from 'rollup-plugin-cleaner';
 
 export default {
   input: "src/index.js",
@@ -14,6 +15,11 @@ export default {
     name: "Sparker"
   },
   plugins: [
+    cleaner({
+      targets: [
+        './build/'
+      ]
+    }),
     sass({ insert: true }), // Put css into HTML file via JS
     resolve(), // Follow modules
     commonjs(), // Convert module.exports to es6 export

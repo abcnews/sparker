@@ -22,6 +22,7 @@
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-cleaner": "^0.2.0",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-copy": "^0.2.3",
     "rollup-plugin-node-resolve": "^3.0.2",
