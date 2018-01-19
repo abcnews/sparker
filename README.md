@@ -1,5 +1,13 @@
 # Sparker
 
+## Development
+
+Clone this repo and then do an `npm install`. Make changes to `src/index.js` and then run `rollup -c` to build it into the build directory. You can deploy it with `aunty deploy`.
+
+TODO: do proper releases in the future.
+
+## ABC CoreMedia integration
+
 So you want to have some inline spark charts in your articles?
 
 We are testing an implementation of Spark from After the Flood. This might be useful until we can develop better D3 based spark charts. We are now able to use these in CoreMedia articles now that we have the Spanify plugin/hack.
