@@ -1,0 +1,117 @@
+$base-url: "//www.abc.net.au/res/sites/news-projects/sparker/master/";
+
+@font-face {
+  font-family: "SparkBarMedium";
+  src: url($base-url + "fonts/bar-medium/spark-bar-medium.eot");
+  src: url($base-url + "fonts/bar-medium/spark-bar-medium.eot?#iefix")
+      format("embedded-opentype"),
+    url($base-url + "fonts/bar-medium/spark-bar-medium.woff2") format("woff2"),
+    url($base-url + "fonts/bar-medium/spark-bar-medium.woff") format("woff"),
+    url($base-url + "fonts/bar-medium/spark-bar-medium.ttf") format("truetype"),
+    url($base-url + "fonts/bar-medium/spark-bar-medium.svg#SparkBarMedium")
+      format("svg");
+}
+
+@font-face {
+  font-family: "SparkBarNarrow";
+  src: url($base-url + "fonts/bar-narrow/spark-bar-narrow.eot");
+  src: url($base-url + "fonts/bar-narrow/spark-bar-narrow.eot?#iefix")
+      format("embedded-opentype"),
+    url($base-url + "fonts/bar-narrow/spark-bar-narrow.woff2") format("woff2"),
+    url($base-url + "fonts/bar-narrow/spark-bar-narrow.woff") format("woff"),
+      url($base-url + "fonts/bar-narrow/spark-bar-narrow.ttf")
+      format("truetype"),
+    url($base-url + "fonts/bar-narrow/spark-bar-narrow.svg#SparkBarNarrow")
+      format("svg");
+}
+
+@font-face {
+  font-family: "SparkBarThin";
+  src: url($base-url + "fonts/bar-thin/spark-bar-thin.eot");
+  src: url($base-url + "fonts/bar-thin/spark-bar-thin.eot?#iefix")
+      format("embedded-opentype"),
+    url($base-url + "fonts/bar-thin/spark-bar-thin.woff2") format("woff2"),
+    url($base-url + "fonts/bar-thin/spark-bar-thin.woff") format("woff"),
+      url($base-url + "fonts/bar-thin/spark-bar-thin.ttf")
+      format("truetype"),
+    url($base-url + "fonts/bar-thin/spark-bar-thin.svg#SparkBarThin")
+      format("svg");
+}
+
+@font-face {
+  font-family: "SparkDotMedium";
+  src: url($base-url + "fonts/dots-medium/spark-dot-medium.eot");
+  src: url($base-url + "fonts/dots-medium/spark-dot-medium.eot?#iefix")
+      format("embedded-opentype"),
+    url($base-url + "fonts/dots-medium/spark-dot-medium.woff2") format("woff2"),
+    url($base-url + "fonts/dots-medium/spark-dot-medium.woff") format("woff"),
+      url($base-url + "fonts/dots-medium/spark-dot-medium.ttf")
+      format("truetype"),
+    url($base-url + "fonts/dots-medium/spark-dot-medium.svg#SparkDotMedium")
+      format("svg");
+}
+
+@font-face {
+  font-family: "SparkDotSmall";
+  src: url($base-url + "fonts/dots-small/spark-dot-small.eot");
+  src: url($base-url + "fonts/dots-small/spark-dot-small.eot?#iefix")
+      format("embedded-opentype"),
+    url($base-url + "fonts/dots-small/spark-dot-small.woff2") format("woff2"),
+    url($base-url + "fonts/dots-small/spark-dot-small.woff") format("woff"),
+      url($base-url + "fonts/dots-small/spark-dot-small.ttf")
+      format("truetype"),
+    url($base-url + "fonts/dots-small/spark-dot-small.svg#SparkDotSmall")
+      format("svg");
+}
+
+@font-face {
+  font-family: "SparkLine";
+  src: url($base-url + "fonts/dotline-medium/spark-dotline-medium.eot");
+  src: url($base-url + "fonts/dotline-medium/spark-dotline-medium.eot?#iefix")
+      format("embedded-opentype"),
+    url($base-url + "fonts/dotline-medium/spark-dotline-medium.woff2") format("woff2"),
+    url($base-url + "fonts/dotline-medium/spark-dotline-medium.woff") format("woff"),
+      url($base-url + "fonts/dotline-medium/spark-dotline-medium.ttf")
+      format("truetype"),
+    url($base-url + "fonts/dotline-medium/spark-dotline-medium.svg#SparkLine")
+      format("svg");
+}
+
+.spark {
+  color: crimson;
+  // Technically not needed but included to try to get Edge going
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+}
+
+.spark.bar,
+.spark.bar.medium {
+  font-family: SparkBarMedium;
+}
+
+.spark.bar.narrow {
+  font-family: SparkBarNarrow;
+}
+
+.spark.bar.thin {
+  font-family: SparkBarThin;
+}
+
+.spark.dot {
+  font-family: SparkDotMedium;
+}
+
+.spark.dot.small {
+  font-family: SparkDotSmall;
+}
+
+.spark.line {
+  font-family: SparkLine;
+}
+
+// Set up multi-color choices
+.spark.blue {
+  color: rgb(0, 88, 204);
+}
