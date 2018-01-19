@@ -4,6 +4,7 @@ import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import uglify from "rollup-plugin-uglify";
 import babel from "rollup-plugin-babel";
+import copy from 'rollup-plugin-copy';
 
 export default {
   input: "src/index.js",
@@ -19,6 +20,9 @@ export default {
     babel({ // ES5 conversion 
       exclude: "node_modules/**" // only transpile our source code
     }),
-    uglify() // Minify code
+    uglify(), // Minify code
+    copy({
+      "src/fonts": "build/fonts"
+    })
   ]
 };
