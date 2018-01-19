@@ -1,5 +1,5 @@
 {
-  "name": "sparker-abc",
+  "name": "sparker",
   "version": "1.0.0",
   "description": "Inline spark charts in CoreMedia articles",
   "main": "index.js",
