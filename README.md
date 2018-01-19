@@ -51,3 +51,5 @@ We can also render all these charts with numbers on either side. This is to let 
 ## Syndication
 
 For environments that don't have JavaScript fully enabled like the ABC App and Apple News etc. the spark charts will simply not display at all. The chart code should be invisible to the end user unless JavaScript is on.
+
+See an article with [spark charts in action](http://nucwed.aus.aunty.abc.net.au/news/2018-01-19/how-to-use-inline-spark-charts/9307030#devmode) (ABC Internal Network Only)
