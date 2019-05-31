@@ -10,14 +10,14 @@ import cleaner from 'rollup-plugin-cleaner';
 export default {
   input: "src/index.js",
   output: {
-    file: "build/sparker.js",
+    file: ".build/sparker.js",
     format: "umd",
     name: "Sparker"
   },
   plugins: [
     cleaner({
       targets: [
-        './build/'
+        './.build/'
       ]
     }),
     sass({ insert: true }), // Put css into HTML file via JS
@@ -28,7 +28,7 @@ export default {
     }),
     uglify(), // Minify code
     copy({
-      "src/fonts": "build/fonts"
+      "src/fonts": ".build/fonts"
     })
   ]
 };

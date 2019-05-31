@@ -1,0 +1,12 @@
+{
+	"id": "master",
+	"targets": [
+		{
+			"files": "**",
+			"from": ".build",
+			"profile": "contentftp",
+			"publicPath": "https://www.abc.net.au/res/sites/news-projects/sparker/master/",
+			"to": "/www/res/sites/news-projects/sparker/master"
+		}
+	]
+}
